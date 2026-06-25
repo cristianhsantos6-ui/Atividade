@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo Seguro e IPVA Automotivo</title>
-    <link rel="stylesheet" href="css/style_veiculo.css">
+    <link rel="stylesheet" href="css/style_veiculos.css">
 </head>
 <body>
     <div class="container">
@@ -32,17 +32,22 @@
             </div>
 
             <div class="form-group">
+                <label for="valor"> Valor de Mercado (R$):</label>
+                <input type="number" id="valor" step="0.01" min="1" required>
+            </div>
+
+            <div class="form-group">
                 <label> Tipo de Combustivel:</label>
                 <div class="radio-group">
-                    <label><input type="radio" name="combustivel" value="Gasolina" checked> Gasolina</label>
-                    <label><input type="radio" name="combustivel" value="Etanol"> Etanol</label>
-                    <label><input type="radio" name="Bicombustível" value="Gasolina"> Bicombustível</label>
-                    <label><input type="radio" name="combustivel" value="Híbrido" checked> Híbrido</label>
-                    <label><input type="radio" name="combustivel" value="Elétrico" checked> Elétrico</label>
+                    <label><input type="radio" name="Combustivel" value="Gasolina" checked> Gasolina</label>
+                    <label><input type="radio" name="Combustivel" value="Etanol"> Etanol</label>
+                    <label><input type="radio" name="Combustivel" value="Gasolina"> Bicombustível</label>
+                    <label><input type="radio" name="Combustivel" value="Híbrido" checked> Híbrido</label>
+                    <label><input type="radio" name="Combustivel" value="Elétrico" checked> Elétrico</label>
                 </div>
             </div>
 
-            <button> type="submit">Adicionar Veículo</button>
+            <button type="submit"> Adcionar Veículos</button>
             </form>
 
             <h2>Veículos Cadastrados</h2>
