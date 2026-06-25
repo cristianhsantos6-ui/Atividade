@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Seguro e IPVA Automotivo</title>
+    <link rel="stylesheet" href="css/style_veiculo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Veículos</h1>
+        
+        <form id="form-veiculo">
+            <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" required>
+            </div>
+
+            <div class="form-group">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ano">Ano de Fabricação:</label>
+                <input type="number" id="ano" min="1900" max="2027" required>
+            </div>
+
+            <div class="form-group">
+                <label> Tipo de Combustivel:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="combustivel" value="Gasolina" checked> Gasolina</label>
+                    <label><input type="radio" name="combustivel" value="Etanol"> Etanol</label>
+                    <label><input type="radio" name="Bicombustível" value="Gasolina"> Bicombustível</label>
+                    <label><input type="radio" name="combustivel" value="Híbrido" checked> Híbrido</label>
+                    <label><input type="radio" name="combustivel" value="Elétrico" checked> Elétrico</label>
+                </div>
+            </div>
+
+            <button> type="submit">Adicionar Veículo</button>
+            </form>
+
+            <h2>Veículos Cadastrados</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <tr>Placa</tr>
+                            <tr>Modelo</tr>
+                            <tr>Marca</tr>
+                            <tr>Idade</tr>
+                            <tr>Seguro</tr>
+                            <tr>IPVA</tr>
+                            <tr>Total (Licenciamento)</tr>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-veiculos">
+                    </tbody>
+                </table>
+            </div>
+            <script type="module" src="js/script_veiculo.js"></script>
+
+           

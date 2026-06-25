@@ -1,0 +1,105 @@
+* {
+    box-sizing: border_box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: aquamarine;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(red, green, blue, alpha);
+}
+
+h1, h2 {
+    color: #0e0404;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+    border-top: 2px solid #e9ecef;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type= "text"],
+input[type= "number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+button {
+    background-color: #0e0404;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #004085;
+}
+
+.table-container {
+    overflow-y: auto;
+    margin: 15px;
+}
+
+table {
+    width: 100%;
+    border-color:collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #004085;
+}
+
+tr:hover {
+    background-color: #f1f3f5;
+}
