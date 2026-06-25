@@ -2,7 +2,7 @@
 import { calcularCustosVeiculo } from "./script_calculo.js";
 
 const form = document.getElementById('form-veiculo');
-const ListaVeiculos = document.getElementById('Lista-veiculos');
+const listaVeiculos = document.getElementById('lista-veiculos');
 
 form.addEventListener('submit', function(event) {
     // EVITAR O RECARREGAMENTO DA PÁGINA (RF02 e fluxo da Aplicação)
@@ -14,7 +14,7 @@ form.addEventListener('submit', function(event) {
     const placa = document.getElementById('placa').value;
     const anofabricacao = parseInt(document.getElementById('ano').value);
     const valorMercado = parseFloat(document.getElementById('valor').value);
-    const tipoCombustivel = document.querySelector('input[name="combustivel"]:checked').value;
+    const tipoCombustivel = document.querySelector('input[name="Combustivel"]:checked').value;
 
 
     // EXECUTA OS CÁLCULOS ATRAVES DA FUNÇÃO IMPORTADA
@@ -40,7 +40,7 @@ form.addEventListener('submit', function(event) {
 
 
           // ADICIONA O ELEMENTO CRIADO NA LISTA ABAIXO DO FORMULÁRIO
-          ListaVeiculos.appendChild(novaLinha);
+          listaVeiculos.appendChild(novaLinha);
 
 
           // RF03 - Limpeza Automática do Formulário
